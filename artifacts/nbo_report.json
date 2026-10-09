@@ -1,0 +1,77 @@
+{
+  "t0": "1998-01-01",
+  "outcome_window_end": "1999-01-01",
+  "target_share": 0.2,
+  "product_value": {
+    "credit_card": 1.0,
+    "loan": 3.0,
+    "insurance": 1.5
+  },
+  "per_product": {
+    "credit_card": {
+      "auc": 0.8286,
+      "gini": 0.6571,
+      "ks": 0.531,
+      "avg_precision": 0.3208,
+      "brier": 0.0832,
+      "base_rate": 0.1073,
+      "n": 1156,
+      "eligible_customers": 3853,
+      "adopters": 414,
+      "conversion_top20_model": 0.29004329004329005,
+      "conversion_top20_heuristic": 0.24242424242424243,
+      "conversion_random": 0.10726643598615918,
+      "lift_vs_random": 2.703951962016478,
+      "uplift_vs_heuristic": 0.1964285714285714,
+      "adopters_captured_top20": 0.5403225806451613,
+      "low_data": false
+    },
+    "loan": {
+      "auc": 0.8903,
+      "gini": 0.7806,
+      "ks": 0.6789,
+      "avg_precision": 0.2623,
+      "brier": 0.0323,
+      "base_rate": 0.0389,
+      "n": 1132,
+      "eligible_customers": 3772,
+      "adopters": 146,
+      "conversion_top20_model": 0.1592920353982301,
+      "conversion_top20_heuristic": 0.061946902654867256,
+      "conversion_random": 0.038869257950530034,
+      "lift_vs_random": 4.0981496379726465,
+      "uplift_vs_heuristic": 1.5714285714285716,
+      "adopters_captured_top20": 0.8181818181818182,
+      "low_data": false
+    },
+    "insurance": {
+      "auc": 0.9829,
+      "gini": 0.9657,
+      "ks": 0.9352,
+      "avg_precision": 0.2729,
+      "brier": 0.0057,
+      "base_rate": 0.0061,
+      "n": 1149,
+      "eligible_customers": 3830,
+      "adopters": 22,
+      "conversion_top20_model": 0.030434782608695653,
+      "conversion_top20_heuristic": 0.0,
+      "conversion_random": 0.006092254134029591,
+      "lift_vs_random": 4.995652173913044,
+      "uplift_vs_heuristic": null,
+      "adopters_captured_top20": 1.0,
+      "low_data": true
+    }
+  },
+  "summary": {
+    "products_in_summary": [
+      "credit_card",
+      "loan"
+    ],
+    "campaign_conversion_heuristic": 0.1531441734917725,
+    "campaign_conversion_random": 0.07343113689758302,
+    "campaign_conversion_model": 0.22536214479461253,
+    "campaign_uplift_vs_heuristic": 0.47156852040942865,
+    "campaign_uplift_vs_random": 2.0690270410620633
+  }
+}

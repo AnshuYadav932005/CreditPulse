@@ -1,0 +1,10 @@
+services:
+  api:
+    build: .
+    image: finsight
+    ports: ["8000:8000"]
+  dashboard:
+    image: finsight
+    depends_on: [api]
+    command: streamlit run dashboard/app.py --server.port 8501 --server.address 0.0.0.0
+    ports: ["8501:8501"]

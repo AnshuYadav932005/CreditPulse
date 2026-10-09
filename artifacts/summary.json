@@ -1,0 +1,52 @@
+{
+  "credit_scoring": {
+    "auc": 0.9251,
+    "gini": 0.8501,
+    "auc_traditional": 0.7308,
+    "auc_out_of_time": 0.9689,
+    "auc_thin_file": 0.8653,
+    "npa_reduction_at_85pct_approval": 0.5416666666666667,
+    "straight_through_rate": 0.7008797653958945,
+    "target": "15% NPA reduction, faster approvals"
+  },
+  "early_warning": {
+    "row_auc": 0.9135,
+    "red_precision": 0.8,
+    "red_recall": 0.26666666666666666,
+    "red_median_lead_days": 141.5,
+    "amber_precision": 0.5,
+    "amber_recall": 0.4666666666666667,
+    "live_red": 1,
+    "live_amber": 3,
+    "target": "flag 30-60 days ahead with 80%+ precision"
+  },
+  "next_best_offer": {
+    "products_in_summary": [
+      "credit_card",
+      "loan"
+    ],
+    "campaign_conversion_heuristic": 0.1531441734917725,
+    "campaign_conversion_random": 0.07343113689758302,
+    "campaign_conversion_model": 0.22536214479461253,
+    "campaign_uplift_vs_heuristic": 0.47156852040942865,
+    "campaign_uplift_vs_random": 2.0690270410620633,
+    "per_product_auc": {
+      "credit_card": 0.8286,
+      "loan": 0.8903,
+      "insurance": 0.9829
+    },
+    "customers_with_offer": 4440,
+    "target": "+20% cross-sell conversion"
+  },
+  "segmentation": {
+    "k": 4,
+    "silhouette": 0.29156343010019153,
+    "segments": {
+      "Bill payers \u00b7 No card use": 2003,
+      "Card spenders \u00b7 Multi-product": 802,
+      "No bills \u00b7 Cash-heavy": 954,
+      "Pensioners \u00b7 Senior": 741
+    }
+  },
+  "customers": 4500
+}

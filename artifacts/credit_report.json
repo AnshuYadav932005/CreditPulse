@@ -1,0 +1,199 @@
+{
+  "dataset": {
+    "n_loans": 682,
+    "n_bad": 76,
+    "bad_rate": 0.11143695014662756,
+    "median_history_months": 13.0,
+    "thin_file_share_lt6m": 0.09824046920821114,
+    "n_features": 52
+  },
+  "cv": "5-fold stratified x5 repeats, out-of-fold",
+  "metrics": {
+    "traditional_logit": {
+      "auc": 0.7308,
+      "gini": 0.4617,
+      "ks": 0.3669,
+      "avg_precision": 0.2347,
+      "brier": 0.2087,
+      "base_rate": 0.1114,
+      "n": 682
+    },
+    "behavioural_logit": {
+      "auc": 0.92,
+      "gini": 0.8399,
+      "ks": 0.6951,
+      "avg_precision": 0.7559,
+      "brier": 0.0919,
+      "base_rate": 0.1114,
+      "n": 682
+    },
+    "behavioural_lgbm": {
+      "auc": 0.9251,
+      "gini": 0.8501,
+      "ks": 0.7117,
+      "avg_precision": 0.7513,
+      "brier": 0.0509,
+      "base_rate": 0.1114,
+      "n": 682
+    }
+  },
+  "out_of_time": {
+    "traditional_logit": {
+      "auc": 0.8497,
+      "gini": 0.6995,
+      "ks": 0.5894,
+      "avg_precision": 0.3005,
+      "brier": 0.226,
+      "base_rate": 0.0585,
+      "n": 205
+    },
+    "behavioural_logit": {
+      "auc": 0.9758,
+      "gini": 0.9516,
+      "ks": 0.8649,
+      "avg_precision": 0.8112,
+      "brier": 0.0905,
+      "base_rate": 0.0585,
+      "n": 205
+    },
+    "behavioural_lgbm": {
+      "auc": 0.9689,
+      "gini": 0.9378,
+      "ks": 0.8446,
+      "avg_precision": 0.7104,
+      "brier": 0.0387,
+      "base_rate": 0.0585,
+      "n": 205
+    },
+    "cutoff_date": "1997-10-07"
+  },
+  "champion": "behavioural_lgbm",
+  "segment_metrics": {
+    "thin_file_lt6m": {
+      "auc": 0.8653,
+      "gini": 0.7305,
+      "ks": 0.5893,
+      "avg_precision": 0.6502,
+      "brier": 0.0952,
+      "base_rate": 0.1642,
+      "n": 67
+    },
+    "history_6m_plus": {
+      "auc": 0.9295,
+      "gini": 0.859,
+      "ks": 0.7235,
+      "avg_precision": 0.7672,
+      "brier": 0.0461,
+      "base_rate": 0.1057,
+      "n": 615
+    }
+  },
+  "approval_curve": [
+    {
+      "approval_rate": 0.5,
+      "npa_model": 0.01466275659824047,
+      "npa_traditional": 0.04398826979472141,
+      "npa_approve_all": 0.11143695014662756,
+      "npa_reduction_vs_traditional": 0.6666666666666667
+    },
+    {
+      "approval_rate": 0.55,
+      "npa_model": 0.013333333333333334,
+      "npa_traditional": 0.058666666666666666,
+      "npa_approve_all": 0.11143695014662756,
+      "npa_reduction_vs_traditional": 0.7727272727272727
+    },
+    {
+      "approval_rate": 0.6,
+      "npa_model": 0.012224938875305624,
+      "npa_traditional": 0.06356968215158924,
+      "npa_approve_all": 0.11143695014662756,
+      "npa_reduction_vs_traditional": 0.8076923076923077
+    },
+    {
+      "approval_rate": 0.65,
+      "npa_model": 0.011286681715575621,
+      "npa_traditional": 0.0744920993227991,
+      "npa_approve_all": 0.11143695014662756,
+      "npa_reduction_vs_traditional": 0.8484848484848485
+    },
+    {
+      "approval_rate": 0.7,
+      "npa_model": 0.016771488469601678,
+      "npa_traditional": 0.07756813417190776,
+      "npa_approve_all": 0.11143695014662756,
+      "npa_reduction_vs_traditional": 0.7837837837837838
+    },
+    {
+      "approval_rate": 0.75,
+      "npa_model": 0.01953125,
+      "npa_traditional": 0.078125,
+      "npa_approve_all": 0.11143695014662756,
+      "npa_reduction_vs_traditional": 0.75
+    },
+    {
+      "approval_rate": 0.8,
+      "npa_model": 0.02564102564102564,
+      "npa_traditional": 0.08058608058608059,
+      "npa_approve_all": 0.11143695014662756,
+      "npa_reduction_vs_traditional": 0.6818181818181819
+    },
+    {
+      "approval_rate": 0.85,
+      "npa_model": 0.03793103448275862,
+      "npa_traditional": 0.08275862068965517,
+      "npa_approve_all": 0.11143695014662756,
+      "npa_reduction_vs_traditional": 0.5416666666666667
+    },
+    {
+      "approval_rate": 0.9,
+      "npa_model": 0.04560260586319218,
+      "npa_traditional": 0.09120521172638436,
+      "npa_approve_all": 0.11143695014662756,
+      "npa_reduction_vs_traditional": 0.5
+    },
+    {
+      "approval_rate": 0.95,
+      "npa_model": 0.06790123456790123,
+      "npa_traditional": 0.09876543209876543,
+      "npa_approve_all": 0.11143695014662756,
+      "npa_reduction_vs_traditional": 0.3125
+    },
+    {
+      "approval_rate": 1.0,
+      "npa_model": 0.11143695014662756,
+      "npa_traditional": 0.11143695014662756,
+      "npa_approve_all": 0.11143695014662756,
+      "npa_reduction_vs_traditional": 0.0
+    }
+  ],
+  "npa_reduction_at_85pct_approval": 0.5416666666666667,
+  "decision_bands": {
+    "approve_below_pd": 0.01948772370437285,
+    "decline_above_pd": 0.3020491686464712,
+    "auto_approve_share": 0.5997067448680352,
+    "auto_decline_share": 0.10117302052785923,
+    "manual_review_share": 0.2991202346041056,
+    "straight_through_rate": 0.7008797653958945,
+    "npa_auto_approved": 0.012224938875305624,
+    "bad_rate_auto_declined": 0.7101449275362319,
+    "bads_caught_by_decline": 0.6447368421052632
+  },
+  "top_features": {
+    "bal_min_6m": 0.4915,
+    "min_bal_cover": 0.4043,
+    "cash_share_12m": 0.3706,
+    "has_disponent": 0.3524,
+    "inflow_cv_12m": 0.3233,
+    "bal_end_last": 0.2351,
+    "netflow_mean_3m": 0.2149,
+    "bal_min_3m": 0.2094,
+    "payments": 0.1815,
+    "netflow_mean_6m": 0.1795,
+    "transfer_share_12m": 0.1792,
+    "inflow_trend": 0.1525,
+    "amount": 0.1139,
+    "bal_mean_12m": 0.0984,
+    "bal_cover": 0.0964
+  }
+}

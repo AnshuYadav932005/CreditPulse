@@ -1,0 +1,59 @@
+{
+  "panel": {
+    "rows": 10912,
+    "loans": 606,
+    "positives": 76,
+    "positive_rate": 0.006964809384164223,
+    "label": "delinquency onset 30-90 days ahead"
+  },
+  "cv": "StratifiedGroupKFold(5) grouped by loan, out-of-fold",
+  "metrics_row_level": {
+    "auc": 0.9135,
+    "gini": 0.8271,
+    "ks": 0.7126,
+    "avg_precision": 0.1061,
+    "brier": 0.0067,
+    "base_rate": 0.007,
+    "n": 10912
+  },
+  "red_alert": {
+    "threshold": 0.203384560676765,
+    "borrowers_flagged": 15,
+    "true_flags": 12,
+    "precision": 0.8,
+    "recall": 0.26666666666666666,
+    "delinquent_borrowers": 45,
+    "median_lead_days": 141.5,
+    "lead_days_p25": 61.0,
+    "alerts_per_month_per_1k_loans": 0.7984669434685404
+  },
+  "amber_alert": {
+    "threshold": 0.05745884063061635,
+    "borrowers_flagged": 42,
+    "true_flags": 21,
+    "precision": 0.5,
+    "recall": 0.4666666666666667,
+    "delinquent_borrowers": 45,
+    "median_lead_days": 160.0,
+    "lead_days_p25": 63.0,
+    "alerts_per_month_per_1k_loans": 3.6995635047375703
+  },
+  "note": "Thresholds are tuned on out-of-fold scores over 45 delinquent borrowers; expect roughly +/-10pp variation in precision on new data.",
+  "top_features": {
+    "origination_pd": 0.1023,
+    "bal_min_12m": 0.0952,
+    "buffer_min_6m": 0.0524,
+    "cash_share_12m": 0.0438,
+    "inflow_cv_12m": 0.0377,
+    "bal_end_last": 0.0374,
+    "age": 0.0366,
+    "bal_min_6m": 0.0336,
+    "n_trans_mean_12m": 0.0319,
+    "transfer_share_12m": 0.0304,
+    "bal_std_12m": 0.0294,
+    "pti_3m": 0.0291,
+    "bal_mean_6m": 0.0269,
+    "netflow_mean_12m": 0.0252,
+    "bal_min_3m": 0.0232
+  }
+}

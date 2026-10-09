@@ -1,0 +1,67 @@
+{
+  "k": 4,
+  "silhouette_by_k": {
+    "4": 0.29156343010019153,
+    "5": 0.2741870149386165,
+    "6": 0.2762683130425979,
+    "7": 0.2654780615195621
+  },
+  "profiles": [
+    {
+      "segment": "Bill payers \u00b7 No card use",
+      "customers": 2003,
+      "avg_balance": 37374.647,
+      "avg_inflow": 18293.665,
+      "avg_age": 40.428,
+      "txn_per_month": 6.519,
+      "cash_share": 0.57,
+      "pension_share": 0.0,
+      "card_share": 0.024,
+      "loan_share": 0.177,
+      "insurance_share": 0.198,
+      "avg_products": 0.398
+    },
+    {
+      "segment": "Card spenders \u00b7 Multi-product",
+      "customers": 802,
+      "avg_balance": 57889.318,
+      "avg_inflow": 28569.325,
+      "avg_age": 39.237,
+      "txn_per_month": 6.628,
+      "cash_share": 0.734,
+      "pension_share": 0.0,
+      "card_share": 0.971,
+      "loan_share": 0.224,
+      "insurance_share": 0.142,
+      "avg_products": 1.338
+    },
+    {
+      "segment": "No bills \u00b7 Cash-heavy",
+      "customers": 954,
+      "avg_balance": 36274.849,
+      "avg_inflow": 17151.929,
+      "avg_age": 37.094,
+      "txn_per_month": 4.861,
+      "cash_share": 0.883,
+      "pension_share": 0.0,
+      "card_share": 0.049,
+      "loan_share": 0.155,
+      "insurance_share": 0.0,
+      "avg_products": 0.204
+    },
+    {
+      "segment": "Pensioners \u00b7 Senior",
+      "customers": 741,
+      "avg_balance": 25370.312,
+      "avg_inflow": 5617.895,
+      "avg_age": 71.443,
+      "txn_per_month": 5.19,
+      "cash_share": 0.485,
+      "pension_share": 0.999,
+      "card_share": 0.024,
+      "loan_share": 0.0,
+      "insurance_share": 0.0,
+      "avg_products": 0.024
+    }
+  ]
+}

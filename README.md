@@ -1,6 +1,6 @@
-# FinSight · Retail Banking Decision Intelligence
+# CreditPulse · Retail Banking Decision Intelligence
 
-FinSight covers three connected data-science problems on **real, anonymised bank data**:
+CreditPulse covers three connected data-science problems on **real, anonymised bank data**:
 
 | Brief | What FinSight does | Result (honest, out-of-sample) |
 |---|---|---|
