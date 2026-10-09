@@ -105,5 +105,3 @@ It returns the PD, a 600-point-scale score, the decision band, and the top SHAP 
 - There is no savings product in the source data. The cross-sell targets are cards and loans, with insurance as a low-data product.
 - Product margins are placeholders to be replaced with finance-supplied values.
 - Production hardening would add an MLflow model registry, PSI drift monitoring on the monthly panel, a fairness review of protected attributes (`is_male`, age), which are currently model inputs, and a real champion/challenger A/B test for NBO.
-#   C r e d i t P u l s e  
- 
